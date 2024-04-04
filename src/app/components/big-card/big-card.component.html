@@ -8,11 +8,11 @@ height="282px"
 >
 </div>
 <div class="big-card_title">
-  <h1>{{cardTitel}}</h1>
+  <h1><a [routerLink]="['content', id]">{{cardTitel}}</a></h1>
 
 </div>
 <div class="big-card_description">
-<a href="#">
+<a [routerLink]="['content', id]">
   <p>{{cardDescription}}</p>
 </a>
 
